@@ -1,0 +1,15 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@monorepo/components": "workspace:*",
+    "@monorepo/utils": "workspace:*",
+    "umi": "^4.0.0"
+  }
+}

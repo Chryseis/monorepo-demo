@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "jsx": "react-jsx"
+  },
+  "baseUrl": ".",
+  "paths": {
+    "@monorepo/utils": ["packages/utils/src"],
+    "@monorepo/components": ["packages/components/src"]
+  }
+}
