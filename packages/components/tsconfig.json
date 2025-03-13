@@ -1,9 +1,9 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "jsx": "react-jsx"
+    "lib": ["esnext", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "composite": true
   },
-  "include": ["src"],
-  "references": [{ "path": "../utils" }]
+  "include": ["src/**/*"]
 }

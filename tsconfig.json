@@ -10,12 +10,11 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "composite": true,
-    "jsx": "react-jsx"
-  },
-  "baseUrl": ".",
-  "paths": {
-    "@monorepo/utils": ["packages/utils/src"],
-    "@monorepo/components": ["packages/components/src"]
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@monorepo/utils": ["packages/utils/src"],
+      "@monorepo/components": ["packages/components/src"]
+    }
   }
 }

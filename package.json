@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "pnpm --filter web dev",
+    "dev:packages": "pnpm --filter \"./packages/**\" --parallel dev",
+    "dev:apps": "pnpm --filter \"./apps/**\" dev",
+    "dev": "pnpm dev:packages & pnpm dev:apps",
     "build": "pnpm -r build",
     "lint": "pnpm -r lint"
   },
@@ -12,6 +14,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
     "typescript": "^5.0.0"
   }
 }
